@@ -18,8 +18,9 @@ public class GarbageCollectorExample {
 		
 		obj1 = obj2 = null;
 		
-		System.gc();
-		
+		// gc() mehtod is available in System and Runtime classes
+		//System.gc();
+		Runtime.getRuntime().gc();
 		/*
 		 * System.out.println("Object1 is: " + obj1); System.out.println("Object2 is: "
 		 * + obj2);

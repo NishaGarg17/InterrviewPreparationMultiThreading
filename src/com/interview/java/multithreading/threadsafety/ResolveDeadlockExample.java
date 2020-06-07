@@ -88,7 +88,7 @@ class SyncThread4 implements Runnable {
 		System.out.println(Thread.currentThread().getName() + " is going to accquire lock on: " + message);
 		synchronized (message) {
 			message.message(Thread.currentThread().getName() + " accquired lock on me: ");
-			work();
+			work1();
 			System.out.println(Thread.currentThread().getName() + " released lock on: " + message);
 			
 		}
@@ -97,7 +97,7 @@ class SyncThread4 implements Runnable {
 
 	}
 
-	public void work() {
+	public void work1() {
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException ex) {
